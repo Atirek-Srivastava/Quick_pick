@@ -1,11 +1,10 @@
-import React , { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Offer.css";
 import img1 from "../../assets/offer-img1.png";
 import img2 from "../../assets/offer-img2.png";
 import img3 from "../../assets/offer-img3.png";
 
 const Offer = () => {
-
   const calculateTimeLeft = () => {
     const targetDate = new Date("2024-06-06T23:59:59");
     const now = new Date();
@@ -44,14 +43,14 @@ const Offer = () => {
         <p>100% Free shipping on each product</p>
 
         <div className="time">
-      <span>{String(timeLeft.days).padStart(2, '0')}</span>
-      <a>:</a>
-      <span>{String(timeLeft.hours).padStart(2, '0')}</span>
-      <a>:</a>
-      <span>{String(timeLeft.minutes).padStart(2, '0')}</span>
-      <a>:</a>
-      <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
-    </div>
+          <span>{String(timeLeft.days).padStart(2, "0")}</span>
+          <a>:</a>
+          <span>{String(timeLeft.hours).padStart(2, "0")}</span>
+          <a>:</a>
+          <span>{String(timeLeft.minutes).padStart(2, "0")}</span>
+          <a>:</a>
+          <span>{String(timeLeft.seconds).padStart(2, "0")}</span>
+        </div>
 
         {/* <div className="offer-sections"> 
           <div className="offer-section">
@@ -105,28 +104,26 @@ const Offer = () => {
           </div>
 
           <div className="second-offer">
-          <div>
-          <h6>BEST DEALS</h6>
-          <h1>Sale of the Mont</h1>
-          <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
-          <span>DaysㅤHoursㅤMinㅤSec</span>
-          <button>Shop Now</button>
-          </div>
+            <div>
+              <h6>BEST DEALS</h6>
+              <h1>Sale of the Mont</h1>
+              <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
+              <span>DaysㅤHoursㅤMinㅤSec</span>
+              <button>Shop Now</button>
+            </div>
             <img src={img2} alt="" />
           </div>
 
           <div className="third-offer">
-          <div>
-          <h6>BEST DEALS</h6>
-          <h1>Sale of the Mont</h1>
-          <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
-          <span>DaysㅤHoursㅤMinㅤSec</span>
-          <button>Shop Now</button>
-          </div>
+            <div>
+              <h6>BEST DEALS</h6>
+              <h1>Sale of the Mont</h1>
+              <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
+              <span>DaysㅤHoursㅤMinㅤSec</span>
+              <button>Shop Now</button>
+            </div>
             <img src={img3} alt="" />
           </div>
-
-          
         </div>
       </div>
     </>

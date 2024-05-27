@@ -17,21 +17,18 @@ const Navbar = () => {
         <button type="submit">Search</button>
       </div>
       <div className="navbar1-links">
-      <div className="wish">
-      <img src={wish} alt="" />
-      <a className="navbar1-icon">
-          Wishlist
-        </a>
-      </div>
         <div className="wish">
-        <img src={cart} alt="" />
-        <a className="navbar1-icon">‎ ‎ ‎  Cart</a>
+          <img src={wish} alt="" />
+          <a className="navbar1-icon">Wishlist</a>
         </div>
         <div className="wish">
-        <img src={account} alt="" />
-        <a className="navbar1-icon">My Account</a>
+          <img src={cart} alt="" />
+          <a className="navbar1-icon">‎ ‎ ‎ Cart</a>
         </div>
-        
+        <div className="wish">
+          <img src={account} alt="" />
+          <a className="navbar1-icon">My Account</a>
+        </div>
       </div>
     </nav>
   );

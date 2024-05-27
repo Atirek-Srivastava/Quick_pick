@@ -81,7 +81,7 @@ const Footer = () => {
           <p>XYZ,ABC</p>
           <img src={phone} alt="" />
           <p>+111-22-333</p>
-        </div> 
+        </div>
       </div>
     </>
   );

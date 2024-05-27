@@ -2,14 +2,13 @@ import React from "react";
 import "./Hero.css";
 import img from "../../assets/hero-img.png";
 import lower from "../../assets/lower.png";
-import scroll from '../../assets/scroll.png'
-import play from '../../assets/play.png'
-import basket from '../../assets/basket.png'
+import scroll from "../../assets/scroll.png";
+import play from "../../assets/play.png";
+import basket from "../../assets/basket.png";
 
 const Hero = () => {
   return (
     <>
-    
       <div className="hero-section">
         <div className="hero-left">
           <div className="h1">
@@ -28,21 +27,22 @@ const Hero = () => {
 
           <div className="left-btn">
             <button>Shop now</button>
-            <button> <img src={play} alt=""/> Watch Video</button>
+            <button>
+              {" "}
+              <img src={play} alt="" /> Watch Video
+            </button>
           </div>
         </div>
         <div className="scroll-up">
-         <h4>Scroll</h4> <img src={scroll} alt="" />
+          <h4>Scroll</h4> <img src={scroll} alt="" />
         </div>
         <div className="hero-right">
-         <img src={img} />
+          <img src={img} />
         </div>
         <div className="floating-img">
           <img src={lower} alt="" />
         </div>
-        
       </div>
-      
     </>
   );
 };

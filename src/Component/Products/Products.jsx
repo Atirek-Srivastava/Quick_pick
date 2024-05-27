@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Products.css";
 import Services_Data from "../../assets/assets/services_data";
 // import img from "../../assets/main-img.webp";
@@ -6,7 +6,6 @@ import lower from "../../assets/lower.png";
 // import {div_list} from '../../assets/asset'
 
 const Education = () => {
-
   const [count, setCount] = useState(1);
 
   const handleIncrement = () => {
@@ -34,9 +33,11 @@ const Education = () => {
               <>
                 <div key={index} className="services-format">
                   <div className="small-div">
-                    <img className='float-img' src={service.s_image} alt="" />
+                    <img className="float-img" src={service.s_image} alt="" />
                   </div>
-                  <h3>{service.s_no} <span>30% off</span></h3>
+                  <h3>
+                    {service.s_no} <span>30% off</span>
+                  </h3>
                   <h2>{service.s_name}</h2>
                   <img src={service.s_image} alt="" />
 
@@ -50,10 +51,10 @@ const Education = () => {
                   <div className="second">
                     <h3>{service.s_desc1}</h3>
                     <div className="counter">
-      <button onClick={handleDecrement}>-</button>
-      <span>{count}</span>
-      <button onClick={handleIncrement}>+</button>
-    </div>
+                      <button onClick={handleDecrement}>-</button>
+                      <span>{count}</span>
+                      <button onClick={handleIncrement}>+</button>
+                    </div>
                   </div>
 
                   <div className="third">
