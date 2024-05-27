@@ -1,0 +1,265 @@
+
+.offer-week {
+    text-align: center;
+    padding: 20px;
+    background: rgba(232, 233, 163, 1);
+    height: 650px;
+  }
+
+  .offer-week h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .offer-week p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .time{
+    margin-bottom: 50px;
+  }
+
+  .time span{
+    background-color: tomato;
+    font-size: 44px;
+    padding: 5px;
+    color: white;
+  }
+.time a{
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
+.offer-sections{
+  height: 200px;
+  gap: 30px;
+  display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-offer{
+  height: 80%;
+  width: 27%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(166, 243, 255, 1);
+  border-radius: 30px;
+  display: flex;
+  /* flex-direction: row; */
+  overflow: hidden;
+  justify-content: space-between;
+  /* margin-left: 20px; */
+}
+
+.first-offer div{
+  flex-direction: column;
+  /* margin-left: 28px; */
+  width: 60%;
+}
+
+.first-offer img{
+/* width: 40%; */
+  width: 50%;
+  height: 9rem;
+  transform: rotate(70deg);
+  margin-right: -46px;
+  margin-top: 30px;
+}
+.first-offer h1{
+  font-size: 22px;
+  color: tomato;
+}
+.first-offer button{
+  border-radius: 20px;
+  width: 45%;
+  /* padding-top: 5px;
+  padding-bottom: 18px; */
+  justify-content: center;
+  align-items: center;
+  height: 17%;
+  background-color: tomato;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+.first-offer span{
+  border-radius: 20px;
+  padding: 4px;
+  background-color: tomato;
+}
+
+.first-offer h6{
+  margin-top: 20px;
+  color: tomato;
+}
+
+
+.second-offer{
+  height: 80%;
+  width: 28%;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color:rgba(255, 169, 154, 1);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-offer img{
+  height: 7rem;
+  transform: rotate(-1deg);
+  margin-right: -17px;
+  width: 40%;
+  margin-top: 48px;
+}
+.second-offer div{
+  flex-direction: column;
+  width: 60%;
+  /* margin-left: 30px; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.second-offer h1{
+  font-size:19px;
+  color: black;
+}
+
+.second-offer h6{
+  margin-top: 18px;
+}
+
+.second-offer button{
+  border-radius: 20px;
+  width: 45%;
+  /* padding-top: 5px;
+  padding-bottom: 18px; */
+  justify-content: center;
+  align-items: center;
+  height: 17%;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+.second-offer span{
+  display: flex;
+  font-size: 10px;
+  font-weight: 550;
+  margin-left: 65px;
+
+}
+
+.third-offer{
+  height: 80%;
+  width: 28%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(236, 255, 158, 1);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.third-offer img{
+  height: 15rem;
+  transform: rotate(-10deg);
+  margin-right: -27px;
+  margin-top: 15px;
+  width: 45%;
+}
+
+.third-offer div{
+  flex-direction: column;
+  /* margin-left: 30px; */
+  width: 55%;
+}
+
+.third-offer h1{
+  font-size: 18px;
+  color: rgba(101, 125, 53, 1);
+}
+
+.third-offer h6{
+  margin-top: 15px;
+  color: rgba(101, 125, 53, 1);
+}
+
+.third-offer button{
+  border-radius: 20px;
+  width: 45%;
+  /* padding-top: 5px;
+  padding-bottom: 18px; */
+  justify-content: center;
+  align-items: center;
+  height: 17%;
+  background-color: rgba(101, 125, 53, 1);
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+.third-offer span{
+  display: flex;
+  font-size: 10px;
+  font-weight: 550;
+  margin-left: 52px;
+  color: rgba(101, 125, 53, 1);
+}
+
+
+@media (max-width: 1000px) {
+
+  .offer-week{
+    overflow-y: scroll;
+  }
+
+  .offer-sections{
+    /* display: flex; */
+    height: 600px;
+    flex-direction: column;
+    overflow-y: scroll;
+
+  }
+
+  .offer-week h1 {
+      font-size: 1.5em;
+  }
+
+  .offer-week p {
+      font-size: 0.9em;
+  }
+
+  .time span {
+      font-size: 30px;
+  }
+
+  .time a {
+      font-size: 32px;
+  }
+
+  /* .offer-sections > div {
+      flex: 1 1 100%;
+      height: 200px;
+      margin: 10px 0;
+  }
+
+  .offer-sections > div img {
+      height: 6rem;
+  }
+
+  .offer-sections > div button {
+      width: 80%;
+  } */
+
+}

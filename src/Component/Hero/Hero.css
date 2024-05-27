@@ -1,0 +1,176 @@
+
+
+.hero-section {
+  display: flex;
+  height: 600px;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 2rem; */
+  background: rgba(232, 233, 163, 1);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-left {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.h1 span2 {
+  color: red;
+  font-family: "Ribeye", serif;
+}
+.h1 span{
+  color: green;
+  font-family: "Ribeye", serif;
+}
+
+.hero-left .h1 {
+  font-size: 20px;
+  width: 600px;
+  height: 100px;
+}
+
+.hero-left .left-para {
+  width: 600px;
+  height: 29.82px;
+}
+
+.hero-left .left-para p {
+  margin-top: 10px;
+}
+
+.hero-left .left-btn {
+  display: flex;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.hero-left .left-btn button {
+  width: 120px;
+  height: 36.11px;
+  gap: 40px;
+  border-radius: 115px;
+}
+
+.hero-left .left-btn button:first-child {
+  background-color: rgba(241, 90, 34, 1);
+  color: white;
+  border: none;
+}
+
+.hero-left .left-btn button:last-child {
+  background-color: rgba(232, 233, 163, 1);
+  color: rgba(0, 0, 0, 1);
+  width: 150px;
+}
+
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 470.26px;
+  height: 698.91px;
+  transform: rotate(-28.13deg);
+  position: absolute;
+  bottom: -88px;
+  left: 70%;
+}
+
+.floating-img{
+  position: absolute;
+    bottom: -44px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    left: -25px;
+    transform: rotate(125deg);
+    transform: scaleX(-1);
+}
+
+.floating-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-up{
+  margin-top: 39%;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-up h4{
+  margin-bottom: 20px;
+}
+
+.scroll-up img{
+  /* overflow-y: visible; */
+  /* position: absolute; */
+  background-color: tomato;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+
+.left-btn img{
+  height: 0.9rem;
+}
+
+
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: row;
+    height: 500px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    width: 100%;
+    /* margin-right: -10px; */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-left .h1 {
+    /* font-size: rem; */
+    /* width: auto; */
+    /* height: auto; */
+    margin-top: -90px;
+    margin-bottom: 35px;
+  }
+
+  .hero-left .left-para {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-left .left-btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+
+  .hero-right img {
+    display: none;
+  }
+
+  .floating-img {
+    width: 200px;
+    height: 250px;
+  }
+  .scroll-up {
+    display: none;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ribeye&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rochester&family=Style+Script&display=swap');

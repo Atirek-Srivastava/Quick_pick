@@ -1,0 +1,121 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .explore-menu a {
+    margin-left: auto;
+    margin-top: 55px;
+  }
+  
+  .explore-menu h1 {
+    color: #262626;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  .explore-menu-text {
+    max-width: 50%;
+    color: #1f1b1b;
+  }
+  
+  .explore-menu-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .explore-menu-list-item img {
+    width: 7vw;
+    height: 6.5vw;
+    max-width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .explore-menu-list-item p {
+    margin-top: 10px;
+    color: black;
+    font-weight: 550;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .explore-menu-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .explore-menu hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    display: none;
+  }
+  
+  .ee {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  /* .explore-menu-list-item-image img {
+    background-color: rgba(243, 183, 140, 1);
+  } */
+  
+  .slider {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    align-items: center;
+    gap: 90px;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 0px 10px;
+  }
+  
+  .slider::-webkit-scrollbar{
+    display: none;
+  }
+
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    /* position: absolute; */
+  }
+  
+  .left-arrow {
+    left: 10px;
+    background: transparent;
+  }
+  
+  .right-arrow {
+    right: 10px;
+    background: transparent;
+  }
+
+@media (max-width:768px) {
+  .arrow{
+    height: 2.2rem;
+  }
+}
+  
