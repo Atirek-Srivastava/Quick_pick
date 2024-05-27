@@ -17,11 +17,11 @@
   margin-left: 50px;
 }
 
-.h1 span2 {
+.h1 span {
   color: red;
   font-family: "Ribeye", serif;
 }
-.h1 span{
+.h1 .green{
   color: green;
   font-family: "Ribeye", serif;
 }
@@ -123,7 +123,7 @@
 
 @media (max-width: 900px) {
   .hero-section {
-    flex-direction: row;
+    /* flex-direction: row; */
     height: 500px;
     padding: 2rem;
     justify-content: center;

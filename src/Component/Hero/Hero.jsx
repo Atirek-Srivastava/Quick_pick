@@ -13,8 +13,8 @@ const Hero = () => {
         <div className="hero-left">
           <div className="h1">
             <h1>
-              Grab Your <span>Organic Food</span> to <br />
-              Delight your <span2>Taste</span2> Buds
+              Grab Your <span className="green">Organic Food</span> to <br />
+              Delight your <span>Taste</span> Buds
             </h1>
           </div>
 

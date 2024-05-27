@@ -5,7 +5,7 @@ import Services_Data from "../../assets/assets/services_data";
 import lower from "../../assets/lower.png";
 // import {div_list} from '../../assets/asset'
 
-const Education = () => {
+const Products = () => {
   const [count, setCount] = useState(1);
 
   const handleIncrement = () => {
@@ -23,7 +23,7 @@ const Education = () => {
       <div className="floating-img1">
         <img src={lower} alt="" />
       </div>
-      <div id="education" className="services">
+      <div className="services">
         <div className="services-title">
           <h1>Weekly Deals on Top Products</h1>
         </div>
@@ -72,4 +72,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Products;

@@ -25,7 +25,7 @@
   }
 
   .time span{
-    background-color: tomato;
+    background-color: rgba(241, 90, 34, 1);
     font-size: 44px;
     padding: 5px;
     color: white;
