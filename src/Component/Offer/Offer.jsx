@@ -3,6 +3,9 @@ import "./Offer.css";
 import img1 from "../../assets/offer-img1.png";
 import img2 from "../../assets/offer-img2.png";
 import img3 from "../../assets/offer-img3.png";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const Offer = () => {
   const calculateTimeLeft = () => {
@@ -36,6 +39,14 @@ const Offer = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // const settings = {
+  //   className: "",
+  //   dots: true,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1
+  // };
+
   return (
     <>
       <div className="offer-week">
@@ -52,45 +63,9 @@ const Offer = () => {
           <span>{String(timeLeft.seconds).padStart(2, "0")}</span>
         </div>
 
-        {/* <div className="offer-sections"> 
-          <div className="offer-section">
-            <div className="left-section">
-              <p>Summer Sake</p>
-              <p>100% Fresh Fruit</p>
-              <h2>Up to</h2>
-              <button>Shop Now</button>
-            </div>
-            <div className="right-section">
-              <img src={img1} />
-            </div>
-          </div>
-
-          <div className="offer-section">
-            <div className="left-section">
-              <p>Summer Sake</p>
-              <p>100% Fresh Fruit</p>
-              <h2>Up to</h2>
-              <button>Shop Now</button>
-            </div>
-            <div className="right-section">
-              <img src={img1} />
-            </div>
-          </div>
-
-          <div className="offer-section">
-            <div className="left-section">
-              <p>Summer Sake</p>
-              <p>100% Fresh Fruit</p>
-              <h2>Up to</h2>
-              <button>Shop Now</button>
-            </div>
-            <div className="right-section">
-              <img src={img1} />
-            </div>
-          </div>
-        </div> */}
-
+        
         <div className="offer-sections">
+        {/* <Slider {...settings}> */}
           <div className="first-offer">
             <div>
               <h6>SUMMER SALE</h6>
@@ -124,7 +99,9 @@ const Offer = () => {
             </div>
             <img src={img3} alt="" />
           </div>
+          {/* </Slider> */}
         </div>
+        
       </div>
     </>
   );

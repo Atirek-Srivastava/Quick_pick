@@ -109,17 +109,25 @@ border-style: none;
 .counter span{
   background-color: white;
   height: 15px;
+  width: 10px;
 }
 
 .first{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.first p{
+  font-weight: 550;
+  opacity: 0.7;
 }
 
 .second{
   display: flex;
   justify-content: space-between;
 }
+
 
 .third{
   margin-top: 5px;
@@ -173,18 +181,18 @@ border-style: none;
   }
 
   .services-format {
-    width: 240px;
-    /* height: 260px; */
+    width: 230px;
+    height: 290px;
   }
 
   .services-container img {
-    /* height: 5rem;
-    width: 5rem;
-    margin-left: 0; */
+    height: 4rem;
+    width: 4rem;
+    margin-left: 5;
   }
 
   .add-button {
-    /* margin-left: 50px; */
+    margin-left: 130px;
   }
 
   .para-tag {
@@ -193,14 +201,54 @@ border-style: none;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .services {
-    margin: 20px 10px;
+    margin: 50px 10px;
+    gap: 30px;
+  }
+
+  .services-title h1 {
+    font-size: 26px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-format {
+    width: 220px;
+    height: 230px;
+  }
+
+  .services-container img {
+    display: none;
+  }
+
+  .add-button {
+    margin-left: 120px;
+  }
+
+  .para-tag {
+    margin-left: 20px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .first h4{
+    font-size: 15px;
+  }
+
+  .services {
+    margin: 30px 10px;
     gap: 20px;
   }
 
   .services-title h1 {
-    font-size: 24px;
+    font-size: 20px;
+    padding: 20px;
   }
 
   .services-format {
@@ -211,15 +259,22 @@ border-style: none;
   .services-container img {
     height: 3rem;
     width: 3rem;
-    margin-left: 0;
   }
 
   .add-button {
-    margin-left: 20px;
+    margin-left: 70px;
   }
 
   .para-tag {
     margin-left: 20px;
     font-size: 8px;
+  }
+
+  .services-format h2{
+    font-size: 20px;
+  }
+  .floating-img1{
+    width: 90px;
+    height: 90px;
   }
 }

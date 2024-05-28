@@ -124,67 +124,86 @@
     margin-left: -20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .buynow-container {
-      /* padding: 20px;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   
     .CS, .CA, .HW {
-      width: 45%;
-      max-width: 400px;
-      margin: 20px auto;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .CS h1, .CA h1, .HW h1{
-        font-size: 20px;;
+        font-size: 14px;
     }
 
     .CS p, .CA p, .HW p{
-        font-size: 10px;
-        max-width: 200px;
+        font-size: 12px;
+        width: 80%;
     }
-
-    .CA {
-        margin-left: 20px;
-        margin-bottom: -30px;
-    }
-
-    .CS {
-      margin-bottom: -35px;
-  }
-
+  
     .left-section h1 {
-      /* font-size: 24px; */
-      
+      font-size: 32px;
     }
   
     .left-section p {
-      font-size: 15px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .buynow-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .CS, .CA, .HW {
+        display: none;
+        justify-content: center;
+        align-items: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .left-section h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .left-section p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     .left-section button {
-      width: 90px;
-      height: 36px;
-      margin-left: 50px;
+      margin-left: 30%;
+      margin-right: auto;
+    }
+  
+    .right-section img {
+      position: relative;
+      margin-top: 10px;
     }
   }
   
   @media (max-width: 480px) {
-    .buynow-container {
-      padding: 10px;
+
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-  
-    .CS, .CA, .HW {
-      width: 100%;
-      margin: 20px 0;
-    }
-  
+    
     .left-section h1 {
-      font-size: 20px;
+      font-size: 24px;
     }
   
     .left-section p {
@@ -192,11 +211,8 @@
     }
   
     .left-section button {
-      width: 60px;
+      width: 80px;
       height: 30px;
-    }
-  
-    .right-section img {
-      height: 2rem;
+      margin-right: 120px;
     }
   }

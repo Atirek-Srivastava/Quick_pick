@@ -9,13 +9,11 @@
   .offer-week h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #333;
     margin-top: 20px;
   }
 
   .offer-week p {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.4em;
     margin-top: 20px;
     margin-bottom: 60px;
   }
@@ -41,40 +39,47 @@
   height: 200px;
   gap: 30px;
   display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .first-offer{
-  height: 80%;
+ height: 80%;
   width: 27%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: rgba(166, 243, 255, 1);
   border-radius: 30px;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   overflow: hidden;
-  justify-content: space-between;
-  /* margin-left: 20px; */
+  justify-content: center;
+   align-content: center; 
+ /* margin-left: 20px; */
 }
 
-.first-offer div{
-  flex-direction: column;
-  /* margin-left: 28px; */
+ .first-offer div{
+   display: flex;
+   flex-direction: column;
+   /* gap: 5px; */
+   justify-content: center;
+   align-items: center;
+   
+   /* margin-left: 28px;  */
   width: 60%;
-}
+} 
 
 .first-offer img{
-/* width: 40%; */
-  width: 50%;
-  height: 9rem;
-  transform: rotate(70deg);
-  margin-right: -46px;
-  margin-top: 30px;
+width: 40%;
+  /* width: 50%; */
+  height: 14rem;
+  object-fit: cover;
+  transform: rotate(75deg);
+  /* margin-right: -46px; */
+  /* margin-top: 30px; */
 }
 .first-offer h1{
-  font-size: 22px;
+  font-size: 19px;
   color: tomato;
 }
 .first-offer button{
@@ -82,9 +87,10 @@
   width: 45%;
   /* padding-top: 5px;
   padding-bottom: 18px; */
-  justify-content: center;
-  align-items: center;
-  height: 17%;
+  /* justify-content: center; */
+  font-size: 11px;
+  /* align-items: center; */
+  height: 20%;
   background-color: tomato;
   color: white;
   border: none;
@@ -94,10 +100,12 @@
   border-radius: 20px;
   padding: 4px;
   background-color: tomato;
+  color: wheat;
 }
 
 .first-offer h6{
-  margin-top: 20px;
+  font-size: 9px;
+  margin-bottom: -15px;
   color: tomato;
 }
 
@@ -110,22 +118,31 @@
   background-color:rgba(255, 169, 154, 1);
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.second-offer img{
-  height: 7rem;
-  transform: rotate(-1deg);
-  margin-right: -17px;
-  width: 40%;
-  margin-top: 48px;
-}
 .second-offer div{
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   /* margin-left: 30px; */
   /* justify-content: center;
   align-items: center; */
+}
+
+.second-offer img{
+  width: 40%;
+  height: 9rem;
+  transform: rotate(-1deg);
+  object-fit: cover;
+
+  /* margin-right: -17px;
+  width: 40%;*/
+   margin-top: 48px; 
 }
 
 .second-offer h1{
@@ -134,7 +151,9 @@
 }
 
 .second-offer h6{
-  margin-top: 18px;
+  margin-top: 12px;
+  margin-bottom: -15px;
+  font-size: 9px;
 }
 
 .second-offer button{
@@ -142,9 +161,10 @@
   width: 45%;
   /* padding-top: 5px;
   padding-bottom: 18px; */
-  justify-content: center;
-  align-items: center;
-  height: 17%;
+  font-size: 11px;
+  /* justify-content: center;
+  align-items: center; */
+  height: 35px;
   background-color: black;
   color: white;
   border: none;
@@ -155,7 +175,7 @@
   display: flex;
   font-size: 10px;
   font-weight: 550;
-  margin-left: 65px;
+  /* margin-left: 65px; */
 
 }
 
@@ -167,31 +187,38 @@
   border-radius: 30px;
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  
+  align-items: center;
 }
 
 .third-offer img{
   height: 15rem;
   transform: rotate(-10deg);
-  margin-right: -27px;
-  margin-top: 15px;
-  width: 45%;
+  object-fit: contain;
+  /* margin-right: -27px; */
+  margin-top: 85px;
+  width: 40%;
 }
 
 .third-offer div{
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* margin-left: 30px; */
-  width: 55%;
+  width: 60%;
 }
 
 .third-offer h1{
-  font-size: 18px;
+  font-size: 19px;
   color: rgba(101, 125, 53, 1);
 }
 
 .third-offer h6{
-  margin-top: 15px;
+  margin-top: 12px;
+  font-size: 9px;
+  margin-bottom: -15px;
   color: rgba(101, 125, 53, 1);
 }
 
@@ -200,66 +227,136 @@
   width: 45%;
   /* padding-top: 5px;
   padding-bottom: 18px; */
-  justify-content: center;
-  align-items: center;
-  height: 17%;
+  font-size: 11px;
+  /* justify-content: center;
+  align-items: center; */
+  height: 35px;
   background-color: rgba(101, 125, 53, 1);
   color: white;
   border: none;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .third-offer span{
   display: flex;
   font-size: 10px;
   font-weight: 550;
-  margin-left: 52px;
+  /* margin-left: 52px; */
   color: rgba(101, 125, 53, 1);
 }
 
 
 @media (max-width: 1000px) {
-
-  .offer-week{
-    overflow-y: scroll;
+  .offer-week {
+  
+    height: auto;
   }
 
-  .offer-sections{
-    /* display: flex; */
-    height: 600px;
-    flex-direction: column;
-    overflow-y: scroll;
-
+  .offer-sections {
+    /* height: auto; */
+    display: flex;
+    flex-direction: row;
   }
 
-  .offer-week h1 {
-      font-size: 1.5em;
+  /* .offer-week h1 {
+    font-size: 1.5em;
   }
 
   .offer-week p {
-      font-size: 0.9em;
-  }
+    font-size: 0.9em;
+  } */
 
   .time span {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .time a {
-      font-size: 32px;
+    font-size: 32px;
   }
 
-  /* .offer-sections > div {
-      flex: 1 1 100%;
-      height: 200px;
-      margin: 10px 0;
+  .first-offer,
+  .second-offer,
+  .third-offer {
+    width: 80%;
+    margin-bottom: 20px;
   }
 
-  .offer-sections > div img {
-      height: 6rem;
+  .first-offer img,
+  .second-offer img,
+  .third-offer img {
+    width: 30%;
+    height: auto;
+    /* margin-right: 0; */
+    /* margin-top: 0; */
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .offer-sections{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
   }
 
-  .offer-sections > div button {
-      width: 80%;
-  } */
+  .offer-week {
+    padding: 10px;
+  }
 
+  .offer-week h1 {
+    font-size: 1.2em;
+  }
+
+  .offer-week p {
+    font-size: 0.8em;
+  }
+
+  .time span {
+    font-size: 24px;
+  }
+
+  .time a {
+    font-size: 26px;
+  }
+
+  .first-offer,
+  .second-offer,
+  .third-offer {
+    /* width: 90%; */
+    height: 130px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .first-offer img,
+  .second-offer img,
+  .third-offer img {
+    display: none;
+    width: 50%;
+    margin: -12px;
+    /* transform: none; */
+  }
+
+  .first-offer div,
+  .second-offer div,
+  .third-offer div {
+    width: 100%;
+    align-items: center;
+  }
+
+  .first-offer button,
+  .second-offer button,
+  .third-offer button {
+    width: 40%;
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  
+  .second-offer span,
+  .third-offer span {
+    margin-left: 30px;
+  }
 }
