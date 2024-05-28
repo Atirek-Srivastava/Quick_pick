@@ -91,6 +91,11 @@ text-align: left;
 }
 
 @media screen and (max-width: 480px) {
+
+  .customer{
+    filter: brightness(70%);
+  }
+
   .review {
     display: flex;
     gap: 20px;

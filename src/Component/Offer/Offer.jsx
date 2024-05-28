@@ -3,9 +3,9 @@ import "./Offer.css";
 import img1 from "../../assets/offer-img1.png";
 import img2 from "../../assets/offer-img2.png";
 import img3 from "../../assets/offer-img3.png";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Offer = () => {
   const calculateTimeLeft = () => {
@@ -39,13 +39,13 @@ const Offer = () => {
     return () => clearInterval(timer);
   }, []);
 
-  // const settings = {
-  //   className: "",
-  //   dots: true,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
+  const settings = {
+    className: "",
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <>
@@ -63,45 +63,43 @@ const Offer = () => {
           <span>{String(timeLeft.seconds).padStart(2, "0")}</span>
         </div>
 
-        
         <div className="offer-sections">
-        {/* <Slider {...settings}> */}
-          <div className="first-offer">
-            <div>
-              <h6>SUMMER SALE</h6>
-              <h1>100% Fresh Fruit</h1>
-              <h5>
-                Upto <span>60% Off</span>
-              </h5>
-              <button>Show Now</button>
+          <Slider {...settings}>
+            <div className="first-offer">
+              <div>
+                <h6>SUMMER SALE</h6>
+                <h1>100% Fresh Fruit</h1>
+                <h5>
+                  Upto <span>60% Off</span>
+                </h5>
+                <button>Show Now</button>
+              </div>
+              <img src={img1} alt="" />
             </div>
-            <img src={img1} alt="" />
-          </div>
 
-          <div className="second-offer">
-            <div>
-              <h6>BEST DEALS</h6>
-              <h1>Sale of the Mont</h1>
-              <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
-              <span>DaysㅤHoursㅤMinㅤSec</span>
-              <button>Shop Now</button>
+            <div className="second-offer">
+              <div>
+                <h6>BEST DEALS</h6>
+                <h1>Sale of the Mont</h1>
+                <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
+                <span>DaysㅤHoursㅤMinㅤSec</span>
+                <button>Shop Now</button>
+              </div>
+              <img src={img2} alt="" />
             </div>
-            <img src={img2} alt="" />
-          </div>
 
-          <div className="third-offer">
-            <div>
-              <h6>BEST DEALS</h6>
-              <h1>Sale of the Mont</h1>
-              <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
-              <span>DaysㅤHoursㅤMinㅤSec</span>
-              <button>Shop Now</button>
+            <div className="third-offer">
+              <div>
+                <h6>BEST DEALS</h6>
+                <h1>Sale of the Mont</h1>
+                <span>06ㅤ:ㅤ11ㅤ:ㅤ23ㅤ:ㅤ03</span>
+                <span>DaysㅤHoursㅤMinㅤSec</span>
+                <button>Shop Now</button>
+              </div>
+              <img src={img3} alt="" />
             </div>
-            <img src={img3} alt="" />
-          </div>
-          {/* </Slider> */}
+          </Slider>
         </div>
-        
       </div>
     </>
   );
